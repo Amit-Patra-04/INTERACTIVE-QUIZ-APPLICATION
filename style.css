@@ -1,0 +1,74 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    background-color:#dfff99;
+    background-image:
+        radial-gradient(at 95% 82%, hsla(45,95%,60%,1) 0px, transparent 50%),
+        radial-gradient(at 42% 54%, hsla(355,84%,70%,1) 0px, transparent 50%),
+        radial-gradient(at 2% 77%, hsla(216,72%,63%,1) 0px, transparent 50%),
+        radial-gradient(at 26% 28%, hsla(108,77%,61%,1) 0px, transparent 50%),
+        radial-gradient(at 85% 90%, hsla(106,91%,61%,1) 0px, transparent 50%),
+        radial-gradient(at 60% 32%, hsla(72,73%,68%,1) 0px, transparent 50%),
+        radial-gradient(at 9% 12%, hsla(61,63%,60%,1) 0px, transparent 50%);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#main-title{
+    display: block;
+    top: 0;
+    margin-top: 3rem;
+    position: absolute;
+}
+.quiz-container {
+    background: rgba(255, 255, 255, 0.15);
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    max-width: 90%;
+    width: 400px;
+    backdrop-filter: blur(12px);
+}
+h1 {
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+.option {
+    display: block;
+    width: 100%;
+    margin: 12px 0;
+    padding: 12px;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: 0.3s;
+    font-size: 16px;
+    font-weight: 600;
+}
+.option:hover {
+    background: #404E5C;
+}
+#score {
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 12px;
+}
+@media (max-width: 480px) {
+    .quiz-container {
+        width: 95%;
+        padding: 20px;
+    }
+    h1 {
+        font-size: 20px;
+    }
+    .option {
+        font-size: 14px;
+    }
+}
